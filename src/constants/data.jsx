@@ -8,7 +8,40 @@ export const personalInfo = {
   location: "PH",
 };
 
-export const projects = [1, 2, 3, 4, 5, 6];
+// export const projects = [1, 2, 3, 4, 5, 6];
+
+export const projects = [
+  {
+    title: "Portfolio Website",
+    tech: "React, Tailwind CSS, Framer Motion",
+    desc: "Personal portfolio showcasing projects, skills, and animations.",
+  },
+  {
+    title: "E-Commerce Shop UI",
+    tech: "React, JavaScript, CSS",
+    desc: "Frontend UI for an online shop with product layout and cart design.",
+  },
+  {
+    title: "WordPress Shop Pages",
+    tech: "WordPress, PHP, UI Design",
+    desc: "Created and edited shop pages and product layouts for small business websites.",
+  },
+  {
+    title: "Landing Page Design",
+    tech: "HTML, CSS, JavaScript",
+    desc: "Responsive landing page focused on clean UI and conversion design.",
+  },
+  {
+    title: "Dashboard UI",
+    tech: "React, Tailwind CSS",
+    desc: "Admin dashboard interface with responsive layout and components.",
+  },
+  {
+    title: "UI/UX Practice Project",
+    tech: "Figma, React",
+    desc: "Design-to-code practice project focusing on modern UI/UX principles.",
+  },
+];
 
 export const socialLinks = [
   {
@@ -45,13 +78,13 @@ export const experiences = [
     desc: "Managing and updating WordPress-based websites, including adding and editing pages for online shops. Also creating graphic designs for products and items for sale to enhance visual appeal and user engagement.",
     color: "violet",
   },
-  // {
-  //   title: "Web Developer Intern",
-  //   company: "Freelance",
-  //   period: "2021 — 2023",
-  //   desc: "Developed internal dashboards and small-scale SaaS tools with React and Node.js. Improved UI performance and introduced reusable component systems for faster development.",
-  //   color: "cyan",
-  // },
+  {
+    title: "Web Developer Intern",
+    company: "Freelance",
+    period: "2021 — 2023",
+    desc: "Developed internal dashboards and small-scale SaaS tools with React and Node.js. Improved UI performance and introduced reusable component systems for faster development.",
+    color: "cyan",
+  },
   // {
   //   title: "UI/UX Designer",
   //   company: "Freelance",

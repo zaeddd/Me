@@ -108,40 +108,39 @@ function App() {
 
           <motion.div
             variants={itemVariants}
-            className="card card-violet
-          md:col-span-1 row-span-4 flex flex-col gap-4"
+            className="card card-violet md:col-span-1 row-span-4 flex flex-col"
           >
             <h2 className="section-title">
               <Trophy size={20} className="text-violet-400" />
               <span>Projects</span>
             </h2>
-            <div
-              className="grid grid-cols-1 
-              md:grid-cols-2 gap-3 scrollbar-thin scrollbar-thumb-white/10 scrollbar-track-transparent"
-            >
-              {projects.map((project, i) => (
-                <motion.div
-                  key={i}
-                  className="relative group rounded-xl overflow-hidden w-full aspect-video cursor-pointer"
-                >
-                  <video
-                    src={`projectvid${i}.mp4`}
-                    muted
-                    loop
-                    autoPlay
-                    playsInline
-                    className="w-full h-full object-cover"
-                  ></video>
 
+            <ul className="space-y-3 px-3 text-sm overflow-y-auto overflow-x-hidden">
+              {projects.map((project, i) => (
+                <li key={i} className="soft-card group relative">
+                  {/* Title + Tech */}
+                  <span className="text-white font-medium flex flex-col gap-1">
+                    {project.title}
+                    <span className="text-xs text-violet-300">
+                      {project.tech}
+                    </span>
+                  </span>
+
+                  {/* Description */}
+                  <p className="mt-2 text-slate-400 leading-relaxed">
+                    {project.desc}
+                  </p>
+
+                  {/* KEEP THIS EXACTLY (unchanged behavior) */}
                   <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                     <button className="gradient-btn">
                       Open Project
                       <ExternalLink size={14} />
                     </button>
                   </div>
-                </motion.div>
+                </li>
               ))}
-            </div>
+            </ul>
           </motion.div>
           <motion.div
             variants={itemVariants}
@@ -350,7 +349,7 @@ function App() {
             className="card card-orange row-span-2 flex flex-col gap-3 overflow-hidden group"
           >
             <h2 className="section-title">
-              <Trophy size={20} className="text-amber-400"/>
+              <Trophy size={20} className="text-amber-400" />
               <span>Certificates</span>
             </h2>
             <ul className="space-y-2 text-2 text-slate-400">
