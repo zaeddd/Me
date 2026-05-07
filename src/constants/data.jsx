@@ -21,7 +21,7 @@ export const projects = [
     title: "E-Commerce Shop System",
     tech: "PHP, HTML, JavaScript",
     desc: "A full-stack thesis project featuring an e-commerce website with a customer-facing shop and an admin dashboard for product and order management.",
-    github: "https://github.com/zaeddd/MQ-1",
+    github: "https://github.com/zaeddd/MQ",
   },
   {
     title: "WordPress Shop Pages",
