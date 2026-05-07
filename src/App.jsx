@@ -24,6 +24,7 @@ import {
 } from "./constants/data";
 
 import pp from "./assets/pp.jpg";
+import { li } from "motion/react-m";
 
 function App() {
   const [time, setTime] = useState("");
@@ -213,14 +214,153 @@ function App() {
 
           <motion.div
             variants={itemVariants}
-            className="card card-cyan md:col-span1 row-span-4 flex flex-col"
+            className="card card-cyan md:col-span1 row-span-3 flex flex-col"
           >
-              <h2 className="section-title">
-                <BriefcaseBusiness size={20} className="text-cyan-400" />
-                <span>Experience</span>
-              </h2>
+            <h2 className="section-title">
+              <BriefcaseBusiness size={20} className="text-cyan-400" />
+              <span>Experience</span>
+            </h2>
 
-              <ul className="space-y-3 px-3 text-sm overflow-y-auto"></ul>
+            <ul className="space-y-3 px-3 text-sm overflow-y-auto overflow-x-hidden">
+              {experiences.map((exp, i) => (
+                <li key={i} className="soft-card group">
+                  <span className="text-white font-medium flex items-center gap-2">
+                    {exp.title} - {exp.company}
+                  </span>
+                  <span className="text-xs text-slate-500">{exp.period}</span>
+                  <p className="mt-2 text-slate-400 leading-relaxed">
+                    {exp.desc}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+
+          <motion.div
+            variants={itemVariants}
+            className="card card-green row-span-2 flex flex-col justify-center gap-3 group"
+          >
+            <h2 className="section-title">
+              <BriefcaseBusiness size={20} className="text-emerald-400" />
+              <span>Favorite Tools</span>
+            </h2>
+
+            <ul className="space-y-2 text-sm">
+              {tools.map((tool, i) => (
+                <motion.li
+                  key={i}
+                  whileHover={{ x: 4 }}
+                  className="flex flex-items gap-2 group"
+                >
+                  <span className="bullet bg-green-400/50 group-hover:bg-green-400">
+                    {tool.name}
+                  </span>
+                  {tool}
+                </motion.li>
+              ))}
+            </ul>
+          </motion.div>
+
+          <motion.div
+            variants={itemVariants}
+            className="card card-green row-span-2 flex flex-col justify-center group"
+          >
+            <h2 className="section-title">
+              <Trophy size={20} className="text-emerald-400" />
+              <span>Goals</span>
+            </h2>
+
+            <ul className="text-slate-400 text-sm space-y-2">
+              {goals.map((goal, i) => (
+                <li key={i} className="flex items-start gap-2">
+                  <span className="bullet mt-1 bg-emerald-400/50 group-hover:bg-emerald-400"></span>
+                  {goal}
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+
+          <motion.div
+            variants={itemVariants}
+            className="card card-yellow row-span-3 sm:row-span-4 flex flex-col gap-4"
+          >
+            <h2 className="section-title">
+              <Trophy size={20} className="text-yellow-400" />
+              <span>Achievements & Metrics</span>
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-400">
+              {achievements.map((ach, i) => (
+                <motion.div
+                  key={i}
+                  whileHover={{ scale: 1.03 }}
+                  className="stats-box"
+                >
+                  <span
+                    className={`font-bold text-lg ${
+                      ach.color === "yellow"
+                        ? "text-yellow-400"
+                        : ach.color === "cyan"
+                          ? "text-cyan-400"
+                          : ach.color === "pink"
+                            ? "text-pink-400"
+                            : "text-violet-400"
+                    }`}
+                  >
+                    {ach.value}
+                  </span>
+                  <h3 className="mt-1 font-medium text-white/90">
+                    {ach.title}
+                  </h3>
+                  <p className="mt-1 text-slate-400 text-xs leading-snug">
+                    {ach.desc}
+                  </p>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+
+          <motion.div
+            variants={itemVariants}
+            className="card card-cyan row-span-5 flex flex-col overflow-hidden"
+          >
+            <h2 className="section-title">
+              <User size={20} className="text-cyan-400" />
+              <span>Skills</span>
+            </h2>
+            <ul className="space-y-4 text-sm text-slate-400 overflow-y-auto max-h-[450px]">
+              {skills.map((group, i) => (
+                <li key={i} className="space-y-3">
+                  <span className="font-medium text-white/90">
+                    {group.category}
+                  </span>
+                  <ul className="ml-4 space-y-">
+                    {group.skills.map((skill, j) => (
+                      <li key={j} className="hover-items mt-1">
+                        {skill}
+                      </li>
+                    ))}
+                  </ul>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+
+          <motion.div
+            variants={itemVariants}
+            className="card card-orange row-span-2 flex flex-col gap-3 overflow-hidden group"
+          >
+            <h2 className="section-title">
+              <Trophy size={20} className="text-amber-400"/>
+              <span>Certificates</span>
+            </h2>
+            <ul className="space-y-2 text-2 text-slate-400">
+              {certificates.map((cert, i) => (
+                <li key={i} className="flex items-center gap-2">
+                  <span className="bullet bg-amber-600/50 group-hover:bg-amber-400"></span>
+                  {cert}
+                </li>
+              ))}
+            </ul>
           </motion.div>
         </motion.main>
       </div>

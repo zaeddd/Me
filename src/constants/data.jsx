@@ -1,11 +1,10 @@
-import { FaGithub, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
-
+import { FaGithub, FaLinkedin, FaFacebook, FaYoutube } from "react-icons/fa";
 
 export const personalInfo = {
   name: "Zaedrick Alvarico",
   role: "Web Developer",
-  bio: "Hi, I’m Zaedrick. I'm a Web Developer focused on building fast, elegant, and thoughtful digital experiences. My work blends technical precision with a design-driven mindset to create websites that not only work well but feel great.",
-  email: "zaedrickalvarico@example.com",
+  bio: "Hi, I’m Zaedrick, a Web Developer actively looking for opportunities. I specialize in building fast, responsive React applications and also have a strong interest in UI/UX design. I focus on creating clean, functional, and user-friendly digital experiences.",
+  email: "zaedrickalvarico@gmail.com",
   location: "PH",
 };
 
@@ -25,8 +24,8 @@ export const socialLinks = [
     color: "hover:text-blue-400",
   },
   {
-    name: "Twitter",
-    icon: FaTwitter,
+    name: "Facebook",
+    icon: FaFacebook,
     link: "#",
     color: "hover:text-sky-400",
   },
@@ -40,68 +39,67 @@ export const socialLinks = [
 
 export const experiences = [
   {
-    title: "Frontend Developer",
-    company: "Freelance",
-    period: "2023 — Present",
-    desc: "Building fast, accessible, and visually engaging web apps using React, Next.js, and Tailwind CSS. Collaborating with clients to turn design ideas into responsive, high-performance websites.",
+    title: "WordPress Developer",
+    company: "Sert Technology, Inc. (Intern)",
+    period: "2025",
+    desc: "Managing and updating WordPress-based websites, including adding and editing pages for online shops. Also creating graphic designs for products and items for sale to enhance visual appeal and user engagement.",
     color: "violet",
   },
-  {
-    title: "Web Developer Intern",
-    company: "Freelance",
-    period: "2021 — 2023",
-    desc: "Developed internal dashboards and small-scale SaaS tools with React and Node.js. Improved UI performance and introduced reusable component systems for faster development.",
-    color: "cyan",
-  },
-  {
-    title: "UI/UX Designer",
-    company: "Freelance",
-    period: "2019 — 2021",
-    desc: "Designed intuitive, minimal interfaces with a focus on motion and user experience. Helped startups and small businesses bring their brand and web presence to life.",
-    color: "pink",
-  },
+  // {
+  //   title: "Web Developer Intern",
+  //   company: "Freelance",
+  //   period: "2021 — 2023",
+  //   desc: "Developed internal dashboards and small-scale SaaS tools with React and Node.js. Improved UI performance and introduced reusable component systems for faster development.",
+  //   color: "cyan",
+  // },
+  // {
+  //   title: "UI/UX Designer",
+  //   company: "Freelance",
+  //   period: "2019 — 2021",
+  //   desc: "Designed intuitive, minimal interfaces with a focus on motion and user experience. Helped startups and small businesses bring their brand and web presence to life.",
+  //   color: "pink",
+  // },
 ];
 
 export const tools = [
   "Figma – UI/UX Design",
-  "Adobe After Effects – Motion Design",
+  "Adobe Illustrator –  Design",
   "VS Code – Code Editor",
   "Git & GitHub – Version Control",
-  "Postman – API Testing",
-  "Docker – Containerization",
-  "Notion – Productivity",
+  // "Docker – Containerization",
+  "ChatGPT – Productivity",
 ];
 
 export const goals = [
-  "Launch my own web agency",
-  "Start a web development Youtube channel",
-  "Gain more customers",
-  "Learn new frameworks and libraries",
+  "Secure a role as a Frontend or Web Developer",
+  "Improve and master React and modern frontend tools",
+  "Strengthen UI/UX design skills through real projects",
+  "Build production-ready applications for real users",
 ];
 
 export const achievements = [
   {
-    title: "Projects Completed",
-    value: "50+",
-    desc: "Developed 50+ interactive motion and web projects for enterprise clients.",
+    title: "Web Projects Built",
+    value: "2",
+    desc: "Built responsive web projects using React, focusing on clean UI and smooth user experience.",
     color: "yellow",
   },
   {
-    title: "Open Source Contributions",
-    value: "1.2k+",
-    desc: "Contributed to popular open-source projects, including motion and UI libraries.",
+    title: "WordPress Pages Managed",
+    value: "5+",
+    desc: "Created and updated shop pages and content using WordPress for small business websites.",
     color: "cyan",
   },
   {
-    title: "Speaker Engagements",
-    value: "10+",
-    desc: "Presented at international conferences like Adobe MAX and UXDX.",
+    title: "UI/UX Practice",
+    value: "Ongoing",
+    desc: "Continuously improving UI/UX design skills through personal projects and redesign studies.",
     color: "pink",
   },
   {
-    title: "Awards & Recognition",
-    value: "5",
-    desc: "Won multiple awards for innovative motion design and interactive experiences.",
+    title: "Design Assets Created",
+    value: "20+",
+    desc: "Designed product graphics and visual assets for web and shop listings.",
     color: "violet",
   },
 ];
@@ -111,30 +109,29 @@ export const skills = [
     category: "Frontend",
     skills: [
       "React / Next.js",
-      "Tailwind CSS / CSS Animations",
-      "Framer Motion",
+      "Tailwind CSS ",
+      // "Framer Motion",
       "HTML / CSS / JS",
     ],
   },
   {
     category: "Backend",
-    skills: ["Node.js / Express", "PostgreSQL / Prisma", "REST & GraphQL APIs"],
+    skills: ["PHP / MqSQL", "REST & GraphQL APIs"],
   },
   {
     category: "Design & Tools",
-    skills: ["Figma / Motion Design", "Docker / Git", "Notion / VS Code"],
+    skills: ["Figma /  Design", "Git", "ChatGPT / VS Code"],
   },
   {
     category: "Other",
-    skills: ["Agile / Scrum", "SEO Basics", "Performance Optimization"],
+    skills: ["C++", "Python", "Java", "SEO Basics", "Performance Optimization"],
   },
 ];
 
 export const certificates = [
-  "Microsoft Certified: Power Platform App Maker",
-  "Adobe Certified Expert: After Effects",
-  "Frontend Developer Nanodegree - Udacity",
-  "Docker Essentials - Coursera",
+  "C++ Essentials 1: Intro to Programming for Beginners",
+  "CompTIA IT Fundamentals+ (ITF+) Certification",
+  "Microsoft Certified: Azure Fundamentals (AZ-900)",
 ];
 
 export const animatedBlobs = [
