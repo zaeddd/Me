@@ -14,27 +14,27 @@ export const projects = [
   {
     title: "Portfolio Website",
     tech: "React, Tailwind CSS, Framer Motion",
-    desc: "Personal portfolio showcasing projects, skills, and animations.",
+    desc: "Personal portfolio showcasing projects, skills, and Goals.",
   },
   {
-    title: "E-Commerce Shop UI",
-    tech: "React, JavaScript, CSS",
-    desc: "Frontend UI for an online shop with product layout and cart design.",
+    title: "E-Commerce Shop System",
+    tech: "PHP, HTML, JavaScript",
+    desc: "A full-stack thesis project featuring an e-commerce website with a customer-facing shop and an admin dashboard for product and order management.",
   },
   {
     title: "WordPress Shop Pages",
-    tech: "WordPress, PHP, UI Design",
+    tech: "WordPress, UI Design",
     desc: "Created and edited shop pages and product layouts for small business websites.",
   },
   {
-    title: "Landing Page Design",
-    tech: "HTML, CSS, JavaScript",
-    desc: "Responsive landing page focused on clean UI and conversion design.",
+    title: "Movie List",
+    tech: "React, TMDB API, CSS",
+    desc: "A responsive movie listing app that fetches and displays top movies using The Movie Database (TMDB) API with a clean and modern UI.",
   },
   {
-    title: "Dashboard UI",
+    title: "Landing Page UI",
     tech: "React, Tailwind CSS",
-    desc: "Admin dashboard interface with responsive layout and components.",
+    desc: "Responsive landing page focused on clean UI and conversion design.",
   },
   {
     title: "UI/UX Practice Project",
