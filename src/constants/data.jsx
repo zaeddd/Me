@@ -15,31 +15,37 @@ export const projects = [
     title: "Portfolio Website",
     tech: "React, Tailwind CSS, Framer Motion",
     desc: "Personal portfolio showcasing projects, skills, and Goals.",
+    github: "https://github.com/zaeddd/Me",
   },
   {
     title: "E-Commerce Shop System",
     tech: "PHP, HTML, JavaScript",
     desc: "A full-stack thesis project featuring an e-commerce website with a customer-facing shop and an admin dashboard for product and order management.",
+    github: "https://github.com/zaeddd/MQ-1",
   },
   {
     title: "WordPress Shop Pages",
     tech: "WordPress, UI Design",
     desc: "Created and edited shop pages and product layouts for small business websites.",
+    github: "#",
   },
   {
     title: "Movie List",
     tech: "React, TMDB API, CSS",
     desc: "A responsive movie listing app that fetches and displays top movies using The Movie Database (TMDB) API with a clean and modern UI.",
+    github: "https://github.com/zaeddd/react-movie",
   },
   {
     title: "Landing Page UI",
     tech: "React, Tailwind CSS",
     desc: "Responsive landing page focused on clean UI and conversion design.",
+    github: "https://github.com/zaeddd/Landing-Page",
   },
   {
-    title: "UI/UX Practice Project",
-    tech: "Figma, React",
-    desc: "Design-to-code practice project focusing on modern UI/UX principles.",
+    title: "Barangay Management System",
+    tech: "C++",
+    desc: "Designed and implemented a barangay management program with a user interface to request and manage official forms, improving efficiency and organization.",
+    github: "https://github.com/zaeddd/Brgy-management-system-using-C",
   },
 ];
 

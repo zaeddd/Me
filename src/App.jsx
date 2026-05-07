@@ -131,10 +131,15 @@ function App() {
                     {project.desc}
                   </p>
 
-                  {/* KEEP THIS EXACTLY (unchanged behavior) */}
                   <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                     <button className="gradient-btn">
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                       Open Project
+                      </a>
                       <ExternalLink size={14} />
                     </button>
                   </div>
