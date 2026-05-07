@@ -53,13 +53,13 @@ export const socialLinks = [
   {
     name: "GitHub",
     icon: FaGithub,
-    link: "#",
+    link: "https://github.com/zaeddd",
     color: "hover:text-white",
   },
   {
     name: "LinkedIn",
     icon: FaLinkedin,
-    link: "#",
+    link: "https://www.linkedin.com/in/zaedrick-alvarico-9085ba347/",
     color: "hover:text-blue-400",
   },
   {
